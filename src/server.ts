@@ -26,6 +26,11 @@ const angularApp = new AngularNodeAppEngine();
  * ```
  */
 
+app.get('/', (req, res) => {
+  // todo: logic here based on user's locale, existing cookies,
+  res.redirect('/en');
+});
+
 /**
  * Serve static files from /browser
  */
